@@ -2,15 +2,16 @@
  CUSTOM PROPS 
 ***************************/
 :root {
-    --base-space: 15px;
-    --grid-space: 15px;
+    --base-space: 25px;
     
     --top-color-1: #0084fd;
     --top-color-2: #b5ddff;
     --top-color-text: #62778a;
     --top-color-text-2: #fdfdfe;
+
     --main-color-1: #9792e4;
     --main-color-2: #ffffff;
+    
     --bottom-color-1: #333333;
     --bottom-color-text: #fdfdfe;
 }
@@ -28,6 +29,10 @@ img {
     max-width: 100%;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /***************************  
 DEBUG 
 ***************************/
@@ -42,17 +47,17 @@ GRID
 ***************************/
 .container {
     margin: 0 auto;
-    padding: 0 var(--grid-space);
+    padding: 0 var(--base-space);
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 calc(-1 * var(--grid-space));
+    margin: 0 calc(-1 * var(--base-space));
 }
 
 .col {
-    padding: var(--grid-space);
+    padding: calc(var(--base-space) / 2) var(--base-space);
     width: 100%;
 }
 
@@ -75,18 +80,19 @@ ul {
 
 li {
     display: inline-block;
-    margin: 0 var(--base-space);
+    margin: 0 calc(var(--base-space) / 2);
 }
 
 .btn {
     border: none;
     border-radius: 20px;
-    padding: calc(var(--base-space)/2) var(--base-space);
+    padding: calc(var(--base-space)/3) calc(var(--base-space)/1.5);
 }
 
 .btn-secondary {
     background: white;
-    color: var(--top-color-1);
+    color: black;
+    font-weight: 400;
 }
 
 .card {
@@ -101,11 +107,16 @@ li {
     background-color: var(--top-color-1);
     padding: var(--base-space) 0;
     color: var(--top-color-text-2);
+    font-weight: 300;
 }
 
 #header .container {
     justify-content: space-between;
     align-items: center;
+}
+
+#header .header__menu {
+    font-size: 1.5rem;
 }
 
 #header .header__nav {
