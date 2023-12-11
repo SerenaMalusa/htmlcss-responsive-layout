@@ -4,6 +4,9 @@
     --grid-space: 15px;
     
     --top-color-1: #0084fd;
+    --top-color-2: #b5ddff;
+    --top-color-text: #62778a;
+    --top-color-text-2: #fdfdfe;
 }
 
 /* RESET */
@@ -74,7 +77,7 @@ li {
 #header {
     background-color: var(--top-color-1);
     padding: var(--base-space) 0;
-    color: white;
+    color: var(--top-color-text-2);
 }
 
 #header .container {
@@ -98,4 +101,8 @@ section {
 
 #demo-app .col {
     width: 100%;
+}
+
+#demo-app .card {
+    background-color: var(--top-color-2);
 }
