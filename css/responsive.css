@@ -20,6 +20,11 @@
 ********************************************/
 @media screen and (min-width: 1199px) {
 
+    /* CONTAINER */
+    .container {
+        max-width: 1080px;
+    }
+
     /* HEADER */
 
     /* hide click-menu and show header-nav*/
@@ -32,13 +37,23 @@
     }
 
     /* MAIN */
-    /* SECTION DEMO-APP*/
-    /*first card's content*/
+    /* SECTION DEMO-APP */
+    /*first card's content */
     #demo-app .col:first-of-type .card {
         display: flex;
     }
 
     #demo-app .col:first-of-type .card__content {
         width: 50%;
+    }
+
+    /* SECTION APP-DEV */
+    #app-dev .row {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #app-dev .col {
+        width: 40%;
     }
 }
