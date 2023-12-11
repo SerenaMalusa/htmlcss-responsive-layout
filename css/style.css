@@ -1,4 +1,6 @@
-/* CUSTOM PROPS */
+/**************************
+ CUSTOM PROPS 
+***************************/
 :root {
     --base-space: 15px;
     --grid-space: 15px;
@@ -9,9 +11,13 @@
     --top-color-text-2: #fdfdfe;
     --main-color-1: #9792e4;
     --main-color-2: #ffffff;
+    --bottom-color-1: #333333;
+    --bottom-color-text: #fdfdfe;
 }
 
-/* RESET */
+/*************************** 
+ RESET 
+***************************/
 * {
     margin: 0;
     padding: 0;
@@ -22,14 +28,18 @@ img {
     max-width: 100%;
 }
 
-/* DEBUG */
+/***************************  
+DEBUG 
+***************************/
 .debug {
     border: 2px dashed black;
     min-height: 50px;
     min-width: 70px;
 }
 
-/* GRID */
+/*************************** 
+GRID 
+***************************/
 .container {
     margin: 0 auto;
     padding: 0 var(--grid-space);
@@ -47,7 +57,9 @@ img {
 }
 
 
-/* UTILITY */
+/*************************** 
+UTILITY 
+***************************/
 .d-flex {
     display: flex;
 }
@@ -82,7 +94,9 @@ li {
     height: 100%;
 }
 
-/* HEADER */
+/***************************  
+ HEADER
+***************************/ 
 #header {
     background-color: var(--top-color-1);
     padding: var(--base-space) 0;
@@ -98,7 +112,9 @@ li {
     display: none;
 }
 
-/* MAIN */
+/*************************** 
+ MAIN 
+***************************/
 section {
     padding: calc(var(--base-space)*2) 0;
 }
@@ -134,4 +150,18 @@ section:nth-of-type(even) {
 /* SECTION GET-STARTED */
 #get-started {
     text-align: center;
+}
+
+/*************************** 
+ FOOTER
+***************************/
+#footer {
+    padding: calc(var(--base-space)*2) 0;
+    background-color: var(--bottom-color-1);
+    color: var(--bottom-color-text);
+    text-align: center;
+}
+
+#footer .footer__content {
+    padding: var(--base-space) 0;
 }
