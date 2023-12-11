@@ -99,8 +99,7 @@ section {
     padding: calc(var(--base-space)*2) 0;
 }
 
-/* SECTION DEMO-APP */
-#demo-app .card {
+.section:nth-child(even) {
     background-color: var(--top-color-2);
 }
 
@@ -113,3 +112,11 @@ section {
     background-color: var(--main-color-2);
 }
 
+/* SECTION TESTIMONIALS */
+#testimonials .col:first-of-type .card {
+    background: none;
+}
+
+#testimonials .card {
+    background-color: var(--main-color-1);
+}
