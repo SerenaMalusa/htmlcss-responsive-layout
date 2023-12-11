@@ -7,7 +7,8 @@
     --top-color-2: #b5ddff;
     --top-color-text: #62778a;
     --top-color-text-2: #fdfdfe;
-    --primary-color: #9792e4;
+    --main-color-1: #9792e4;
+    --main-color-2: #ffffff;
 }
 
 /* RESET */
@@ -105,6 +106,10 @@ section {
 
 /* SECTION APP-DEV */
 #app-dev {
-    background-color: var(--primary-color);
+    background-color: var(--main-color-1);
+}
+
+#app-dev .col:last-of-type .card {
+    background-color: var(--main-color-2);
 }
 
