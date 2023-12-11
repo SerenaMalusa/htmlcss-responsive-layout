@@ -48,7 +48,7 @@ GRID
 ***************************/
 .container {
     margin: 0 auto;
-    padding: 0 var(--base-space);
+    padding: 0 calc(var(--base-space)*2);
 }
 
 .row {
@@ -108,7 +108,7 @@ li {
 .card {
     height: 100%;
     border-radius: 15px;
-    padding: 0 var(--base-space);
+    padding: var(--base-space);
 }
 
 /***************************  
@@ -141,7 +141,7 @@ li {
  MAIN 
 ***************************/
 section {
-    padding: var(--base-space) 0;
+    padding: calc(var(--base-space)*2) 0;
     line-height: 2rem;
 }
 
