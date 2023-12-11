@@ -129,4 +129,9 @@ section:nth-of-type(even) {
 
 #benefits .card {
     background-color: var(--main-color-2);
+}  
+
+/* SECTION GET-STARTED */
+#get-started {
+    text-align: center;
 }
