@@ -99,15 +99,11 @@ section {
     padding: calc(var(--base-space)*2) 0;
 }
 
-.section:nth-child(even) {
-    background-color: var(--top-color-2);
-}
-
-/* SECTION APP-DEV */
-#app-dev {
+section:nth-of-type(even) {
     background-color: var(--main-color-1);
 }
 
+/* SECTION APP-DEV */
 #app-dev .col:last-of-type .card {
     background-color: var(--main-color-2);
 }
@@ -119,4 +115,14 @@ section {
 
 #testimonials .card {
     background-color: var(--main-color-1);
+}
+
+/* SECTION BEENFITS */
+#benefits .section__title {
+    color: var(--main-color-2);
+    text-align: center;
+}
+
+#benefits .card {
+    background-color: var(--main-color-2);
 }
