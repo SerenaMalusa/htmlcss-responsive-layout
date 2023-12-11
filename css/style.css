@@ -2,7 +2,7 @@
  CUSTOM PROPS 
 ***************************/
 :root {
-    --base-space: 25px;
+    --base-space: 30px;
     
     --top-color-1: #0084fd;
     --top-color-2: #b5ddff;
@@ -26,11 +26,13 @@
 }
 
 img {
+    display: block;
     max-width: 100%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
 }
 
 /***************************  
@@ -95,6 +97,15 @@ li {
     font-weight: 400;
 }
 
+.btn-tertiary {
+    padding-left: calc(var(--base-space)*1.5);
+    padding-right: calc(var(--base-space)*1.5);
+    background-color: var(--top-color-1);
+    color: var(--top-color-text-2);
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
 .card {
     border-radius: 15px;
     height: 100%;
@@ -130,7 +141,7 @@ li {
  MAIN 
 ***************************/
 section {
-    padding: calc(var(--base-space)*2) 0;
+    padding: var(--base-space) 0;
 }
 
 section:nth-of-type(even) {
@@ -140,6 +151,32 @@ section:nth-of-type(even) {
 /* SECTION DEMO-APP */
 #demo-app .card {
     background-color: var(--top-color-2);
+    color: var(--top-color-text);
+}
+
+#demo-app .card__text {
+    padding: var(--base-space);
+}
+
+#demo-app .card h3 {
+    color: var(--top-color-1);
+    font-size: 1.5rem;
+}
+
+#demo-app .card p {
+    font-weight: 700;
+}
+
+#demo-app .card h3,
+#demo-app .card p,
+#demo-app .card a {
+    margin-bottom: var(--base-space);
+}
+
+#demo-app .card__img img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* SECTION APP-DEV */

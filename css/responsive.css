@@ -13,6 +13,12 @@
         width: calc(100% / 3);
     }
 
+    /* firts card' img */
+    #demo-app .card__img img {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
     /* SECTION BENEFITS */
     #benefits .col {
         width: 50%;
