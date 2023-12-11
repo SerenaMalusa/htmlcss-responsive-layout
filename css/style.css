@@ -104,5 +104,7 @@ section {
 }
 
 #demo-app .card {
+    height: 100%;
     background-color: var(--top-color-2);
 }
+

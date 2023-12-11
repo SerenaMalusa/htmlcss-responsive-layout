@@ -2,6 +2,10 @@
     SIZE SCREEN 992px - TABLET
 ********************************************/
 @media screen and (min-width: 991px) {
+
+    /* MAIN */
+    /* SECTION DEMO-APP*/
+    /* first card width */
     #demo-app .col:first-child {
         width: calc(100% / 3 * 2);
     }
@@ -27,5 +31,14 @@
         display: block;
     }
 
+    /* MAIN */
+    /* SECTION DEMO-APP*/
+    /*first card's content*/
+    #demo-app .col:first-of-type .card {
+        display: flex;
+    }
 
+    #demo-app .col:first-of-type .card__content {
+        width: 50%;
+    }
 }
