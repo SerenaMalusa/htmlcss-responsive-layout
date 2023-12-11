@@ -75,4 +75,13 @@
     #benefits .col {
         width: calc(100% / 3);
     }
+
+    /* SECTION ABOUT-US*/
+    #about-us .col:first-child {
+        width: 70%;
+    }
+
+    #about-us .col:last-child {
+        width: 30%;
+    }
 }
