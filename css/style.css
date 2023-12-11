@@ -1,3 +1,11 @@
+/* CUSTOM PROPS */
+:root {
+    --base-space: 15px;
+    --grid-space: 15px;
+    
+    --top-color-1: #0084fd;
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -5,26 +13,30 @@
     box-sizing: border-box;
 }
 
-/* CUSTOM PROPS */
-:root {
-    --base-space: 15px;
-    
-    --top-color-1: #0084fd;
-}
-
 /* DEBUG */
 .debug {
     border: 2px dashed black;
-    /* min-height: 50px;
-    min-width: 70px; */
+    min-height: 50px;
+    min-width: 70px;
 }
 
-/* UTILITY */
+/* GRID */
 .container {
     margin: 0 auto;
-    padding: 0 var(--base-space);
+    padding: 0 var(--grid-space);
 }
 
+.row {
+    display: flex;
+    margin: 0 calc(-1 * var(--grid-space));
+}
+
+.col {
+    padding: var(--grid-space);
+}
+
+
+/* UTILITY */
 .d-flex {
     display: flex;
 }
@@ -54,6 +66,9 @@ li {
     color: var(--top-color-1);
 }
 
+.card {
+    border-radius: 15px;
+}
 
 /* HEADER */
 #header {
@@ -69,4 +84,18 @@ li {
 
 #header .header__nav {
     display: none;
+}
+
+/* MAIN */
+section {
+    padding: var(--base-space) 0;
+}
+
+/* SECTION DEMO-APP */
+#demo-app .row {
+    flex-wrap: wrap;
+}
+
+#demo-app .col {
+    width: 100%;
 }
