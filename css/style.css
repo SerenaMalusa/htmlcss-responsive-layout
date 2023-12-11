@@ -123,6 +123,11 @@ section:nth-of-type(even) {
     background-color: var(--main-color-1);
 }
 
+/* SECTION DEMO-APP */
+#demo-app .card {
+    background-color: var(--top-color-2);
+}
+
 /* SECTION APP-DEV */
 #app-dev .col:last-of-type .card {
     background-color: var(--main-color-2);
