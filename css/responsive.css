@@ -1,0 +1,22 @@
+/********************************************
+    SIZE SCREEN 992px - TABLET
+********************************************/
+
+/********************************************
+    SIZE SCREEN 1200px - DESKTOP
+********************************************/
+@media screen and (min-width: 1199px) {
+
+    /* HEADER */
+
+    /* hide click-menu and show header-nav*/
+    #header .header__menu {
+        display: none;
+    }
+    
+    #header .header__nav {
+        display: block;
+    }
+
+
+}
