@@ -54,11 +54,11 @@ GRID
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 calc(-1 * var(--base-space));
+    margin: 0 calc(-1 * var(--base-space)/2);
 }
 
 .col {
-    padding: calc(var(--base-space) / 2) var(--base-space);
+    padding: calc(var(--base-space)/2);
     width: 100%;
 }
 
@@ -158,6 +158,7 @@ section:nth-of-type(even) {
 
 #demo-app .col:first-of-type .card {
     padding-top: var(--base-space);
+    padding-bottom: 0;
     text-align: left;
 }
 
