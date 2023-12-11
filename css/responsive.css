@@ -5,7 +5,6 @@
 
     /* MAIN */
     /* SECTION DEMO-APP*/
-    /* first card width */
     #demo-app .col:first-child {
         width: calc(100% / 3 * 2);
     }
@@ -27,6 +26,11 @@
     #about-us .col:last-child {
         width: 40%;
     }
+
+    /* SECTION GET STARTED + FOOTER */
+    .container.container-small {
+        max-width: 768px;
+    }
 }
 
 /********************************************
@@ -40,7 +44,6 @@
     }
 
     /* HEADER */
-
     /* hide click-menu and show header-nav*/
     #header .header__menu {
         display: none;
@@ -62,6 +65,7 @@
     }
 
     /* SECTION APP-DEV */
+    /* align content horizontally and on the bottom*/
     #app-dev .row {
         justify-content: center;
         align-items: flex-end;
