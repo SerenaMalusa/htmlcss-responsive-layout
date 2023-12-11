@@ -2,7 +2,7 @@
  CUSTOM PROPS 
 ***************************/
 :root {
-    --base-space: 30px;
+    --base-space: 20px;
     
     --top-color-1: #0084fd;
     --top-color-2: #b5ddff;
@@ -32,7 +32,6 @@ img {
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 2rem;
 }
 
 /***************************  
@@ -87,8 +86,8 @@ li {
 
 .btn {
     border: none;
-    border-radius: 20px;
-    padding: calc(var(--base-space)/3) calc(var(--base-space)/1.5);
+    border-radius: 25px;
+    padding: 5px 10px;
 }
 
 .btn-secondary {
@@ -98,8 +97,8 @@ li {
 }
 
 .btn-tertiary {
-    padding-left: calc(var(--base-space)*1.5);
-    padding-right: calc(var(--base-space)*1.5);
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: var(--top-color-1);
     color: var(--top-color-text-2);
     font-weight: 700;
@@ -142,6 +141,7 @@ li {
 ***************************/
 section {
     padding: var(--base-space) 0;
+    line-height: 2rem;
 }
 
 section:nth-of-type(even) {
