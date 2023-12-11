@@ -106,8 +106,9 @@ li {
 }
 
 .card {
-    border-radius: 15px;
     height: 100%;
+    border-radius: 15px;
+    padding: 0 var(--base-space);
 }
 
 /***************************  
@@ -152,10 +153,26 @@ section:nth-of-type(even) {
 #demo-app .card {
     background-color: var(--top-color-2);
     color: var(--top-color-text);
+    text-align: center;
 }
 
-#demo-app .card__text {
-    padding: var(--base-space);
+#demo-app .col:first-of-type .card {
+    padding-top: var(--base-space);
+    text-align: left;
+}
+
+/* card img */
+#demo-app .card__img img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* card content*/
+#demo-app .card__icon {
+    padding-top: var(--base-space);
+    color: var(--top-color-1);
+    font-size: 5rem;
 }
 
 #demo-app .card h3 {
@@ -167,16 +184,11 @@ section:nth-of-type(even) {
     font-weight: 700;
 }
 
+#demo-app .card .card__text,
 #demo-app .card h3,
 #demo-app .card p,
-#demo-app .card a {
-    margin-bottom: var(--base-space);
-}
-
-#demo-app .card__img img {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+#demo-app .card__icon {
+    padding-bottom: var(--base-space);
 }
 
 /* SECTION APP-DEV */
