@@ -18,6 +18,15 @@
     #benefits .col {
         width: 50%;
     }
+
+    /* SECTION ABOUT-US*/
+    #about-us .col:first-child {
+        width: 60%;
+    }
+
+    #about-us .col:last-child {
+        width: 40%;
+    }
 }
 
 /********************************************
