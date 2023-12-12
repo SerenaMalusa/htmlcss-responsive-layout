@@ -464,8 +464,6 @@ main > section:nth-of-type(even) {
     vertical-align: middle;
 }
 
-
-
 /*************************** 
  FOOTER
 ***************************/
@@ -473,9 +471,18 @@ main > section:nth-of-type(even) {
     padding: calc(var(--base-space)*2) 0;
     background-color: var(--bottom-color-1);
     color: var(--bottom-color-text);
+    font-size: 0.8rem;
     text-align: center;
 }
 
 #footer .footer__content {
     padding: var(--base-space) 0;
+}
+
+#footer .link {
+    color: var(--main-color-1);
+}
+
+#footer .link:last-of-type {
+    display: block;
 }
