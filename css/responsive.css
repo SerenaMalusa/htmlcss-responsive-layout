@@ -20,15 +20,18 @@
     }
 
     /* SECTION TESTIMONIALS */
+    /* align columns horizontally */
     #testimonials .card .row {
         align-items: center;
     }
+
     #testimonials .card .col.card__img {
         width: 30%;
     }
 
     #testimonials .card .col.card__text {
         width: 70%;
+        text-align: left;
     }
 
     /* SECTION BENEFITS */
@@ -111,6 +114,21 @@
 
     #app-dev .card {
         margin-left: var(--base-space);
+    }
+
+    /* SECTION TESTIMONIALS */ 
+    /* reduce img width*/
+    :root {
+        --rnd-img-space: 150px;
+    }
+
+    /* align columns */
+    #testimonials .card .col.card__img {
+        width: 20%;
+    }
+
+    #testimonials .card .col.card__text {
+        width: 80%;
     }
 
     /* SECTION BENEFITS */
