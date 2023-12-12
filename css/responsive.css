@@ -58,6 +58,12 @@
     .container.container-small {
         max-width: 768px;
     }
+
+    /* SECTION GET STARTED */
+    #get-started h3,
+    #get-started .section__info {
+        width: 100%;
+    } 
 }
 
 /********************************************
