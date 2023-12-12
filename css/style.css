@@ -303,7 +303,21 @@ main > section:nth-of-type(even) {
 
 /* cards */
 #testimonials .card {
+    padding-top: calc(var(--base-space)*1.5);
     background-color: var(--main-color-1);
+    color: var(--main-color-2);
+}
+
+#testimonials p {
+    padding: var(--base-space) 0;
+}
+
+#testimonials p > i {
+    font-size: 1.5rem;
+}
+
+#testimonials .card span {
+    text-transform: uppercase;
 }
 
 /* SECTION BEENFITS */
