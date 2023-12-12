@@ -11,6 +11,7 @@
 
     --main-color-1: #9792e4;
     --main-color-2: #ffffff;
+    --main-color-text: color: #333333;
     
     --bottom-color-1: #333333;
     --bottom-color-text: #fdfdfe;
@@ -182,8 +183,8 @@ main > section:nth-of-type(even) {
 /* SECTION DEMO-APP */
 #demo-app .card {
     background-color: var(--top-color-2);
-    color: var(--top-color-text);
     text-align: center;
+    color: var(--top-color-text);
 }
 
 #demo-app .col:first-of-type .card {
@@ -258,10 +259,27 @@ main > section:nth-of-type(even) {
 }
 
 /* SECTION TESTIMONIALS */
-#testimonials .col:first-of-type .card {
-    background: none;
+#testimonials {
+    text-align: center;
+    color: var(--main-color-text);
 }
 
+/* first column */
+#testimonials .col > div {
+    text-transform: uppercase;
+}
+
+#testimonials .col > h2 {
+    color: var(--main-color-1);
+}
+
+#testimonials .col > div,
+#testimonials .col > h2,
+#testimonials .col > p {
+    padding-bottom: calc(var(--base-space)*1.5);
+}
+
+/* cards */
 #testimonials .card {
     background-color: var(--main-color-1);
 }
