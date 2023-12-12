@@ -66,15 +66,27 @@ GRID
 /*************************** 
 UTILITY 
 ***************************/
+/* display flex */
 .d-flex {
     display: flex;
 }
 
+/* titles */
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* links */
 .link {
     text-decoration: none;
     color: inherit;
 }
 
+/* lists */
 ul {
     list-style: none;
 }
@@ -84,10 +96,26 @@ li {
     margin-left: var(--base-space);
 }
 
+/* buttons */
 .btn {
+    display: inline-block;
     border: none;
     border-radius: 25px;
     padding: 5px 10px;
+}
+
+.btn-round {
+    border-radius: 50%;
+    height: 3rem;
+    aspect-ratio: 1;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--main-color-1);
+    color: inherit;
 }
 
 .btn-secondary {
@@ -105,6 +133,7 @@ li {
     letter-spacing: 0.2rem;
 }
 
+/* cards */
 .card {
     height: 100%;
     border-radius: 15px;
@@ -140,13 +169,14 @@ li {
 /*************************** 
  MAIN 
 ***************************/
-section {
+main > section {
     padding: calc(var(--base-space)*2) 0;
     line-height: 2rem;
 }
 
-section:nth-of-type(even) {
+main > section:nth-of-type(even) {
     background-color: var(--main-color-1);
+    color: var(--main-color-2);
 }
 
 /* SECTION DEMO-APP */
@@ -178,7 +208,6 @@ section:nth-of-type(even) {
 
 #demo-app .card h3 {
     color: var(--top-color-1);
-    font-size: 1.5rem;
 }
 
 #demo-app .card p {
@@ -193,8 +222,28 @@ section:nth-of-type(even) {
 }
 
 /* SECTION APP-DEV */
-#app-dev .col:last-of-type .card {
+/* column */
+#app-dev .col > img,
+#app-dev .col > h2 {
+    padding-bottom: calc(var(--base-space)*2);
+}
+
+/* card */
+#app-dev .card {
+    border-radius: 50px;
     background-color: var(--main-color-2);
+    color: black;
+    text-align: center;
+}
+
+#app-dev .card > img,
+#app-dev .card > h3,
+#app-dev .card > p {
+    padding-bottom: var(--base-space);
+}
+
+#app-dev .card > p {
+    font-style: italic;
 }
 
 /* SECTION TESTIMONIALS */
