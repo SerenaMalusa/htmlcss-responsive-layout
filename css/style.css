@@ -103,7 +103,7 @@ li {
     display: inline-block;
     border: none;
     border-radius: 25px;
-    padding: 5px 10px;
+    padding: 4px 20px;
     background-color: var(--main-color-1);
     color: var(--main-color-2);
 }
@@ -368,6 +368,12 @@ main > section:nth-of-type(even) {
     color: var(--main-color-1);
 }
 
+#about-us .col:last-child .section__img,
+#about-us .col:last-child h3 {
+    padding-bottom: var(--base-space);
+}
+
+
 /* img-round*/
 #about-us .img-round {
     height: 180px;
@@ -389,6 +395,11 @@ main > section:nth-of-type(even) {
     position: absolute;
     top: -11px;
     right: 0;
+}
+
+/* button */
+#about-us .btn {
+    font-size: 0.9rem;
 }
 
 /* SECTION GET-STARTED */
