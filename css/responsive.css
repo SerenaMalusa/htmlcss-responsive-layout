@@ -97,6 +97,10 @@
         width: 40%;
     }
 
+    #app-dev .card {
+        margin-left: var(--base-space);
+    }
+
     /* SECTION BENEFITS */
     #benefits .col {
         width: calc(100% / 3);
