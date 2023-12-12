@@ -364,6 +364,11 @@ main > section:nth-of-type(even) {
 }
 
 /* last column */
+#about-us .col:last-child {
+    color: var(--main-color-1);
+}
+
+/* img-round*/
 #about-us .img-round {
     height: 180px;
     margin-left: 0;
@@ -371,6 +376,19 @@ main > section:nth-of-type(even) {
 
 #about-us .img-round > img {
     height: 180px;
+}
+
+#about-us .section__img {
+    display: inline-block;
+    position: relative;
+}
+
+#about-us .section__img__decoration {
+    font-size:4rem;
+
+    position: absolute;
+    top: -11px;
+    right: 0;
 }
 
 /* SECTION GET-STARTED */
