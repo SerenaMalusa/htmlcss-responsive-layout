@@ -329,6 +329,7 @@ main > section:nth-of-type(even) {
 
 #testimonials .card span {
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 /* SECTION BEENFITS */
