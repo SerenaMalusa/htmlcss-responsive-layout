@@ -303,6 +303,7 @@ main > section:nth-of-type(even) {
 
 /* cards */
 #testimonials .card {
+    border-radius: 50px;
     padding-top: calc(var(--base-space)*1.5);
     background-color: var(--main-color-1);
     color: var(--main-color-2);
