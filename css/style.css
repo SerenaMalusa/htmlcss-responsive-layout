@@ -3,6 +3,7 @@
 ***************************/
 :root {
     --base-space: 20px;
+    --rnd-img-space: 220px;
     
     --top-color-1: #0084fd;
     --top-color-2: #b5ddff;
@@ -141,6 +142,27 @@ li {
     padding: var(--base-space);
 }
 
+/* immagine rotonda */
+.img-round {
+    overflow: hidden;
+    border-radius: 50%;
+    height: var(--rnd-img-space);
+    aspect-ratio: 1;
+    margin: 0 auto;
+
+    background-color: black;
+    color: var(--main-color-1);
+    line-height: var(--rnd-img-space);
+    font-size: 3rem;
+}
+
+.img-round > img {
+    height: var(--rnd-img-space);
+    aspect-ratio: 1;
+    width: auto;
+    object-fit: cover;
+}
+
 /***************************  
  HEADER
 ***************************/ 
@@ -265,7 +287,7 @@ main > section:nth-of-type(even) {
 }
 
 /* first column */
-#testimonials .col > div {
+#testimonials .section__argument {
     text-transform: uppercase;
 }
 
