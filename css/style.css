@@ -352,6 +352,27 @@ main > section:nth-of-type(even) {
     padding-bottom: var(--base-space);
 }
 
+/* SECTION ABOUT US */
+/* firts column */
+#about-us h2 {
+    color: var(--main-color-1);
+}
+
+#about-us h2,
+#about-us p {
+    padding: var(--base-space) 0;
+}
+
+/* last column */
+#about-us .img-round {
+    height: 180px;
+    margin-left: 0;
+}
+
+#about-us .img-round > img {
+    height: 180px;
+}
+
 /* SECTION GET-STARTED */
 #get-started {
     text-align: center;
