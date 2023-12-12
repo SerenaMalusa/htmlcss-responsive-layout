@@ -1,7 +1,7 @@
 /********************************************
-    SIZE SCREEN 992px - TABLET
+    SIZE SCREEN 768px - TABLET
 ********************************************/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
 
     /* MAIN */
     /* SECTION DEMO-APP*/
@@ -22,15 +22,17 @@
     /* SECTION TESTIMONIALS */
     /* align columns horizontally */
     #testimonials .card .row {
+        justify-content: space-between;
         align-items: center;
     }
 
     #testimonials .card .col.card__img {
-        width: 30%;
+        width: var(--rnd-img-space);
     }
 
     #testimonials .card .col.card__text {
-        width: 70%;
+        flex-shrink: 1;
+        width: calc(100% - var(--rnd-img-space) - var(--base-space)/2);
         text-align: left;
     }
 
@@ -40,8 +42,12 @@
     }
 
     /* SECTION ABOUT-US*/
+    #about-us .row {
+        justify-content: space-between;
+    }
+
     #about-us .col:first-child {
-        width: 60%;
+        width: 55%;
     }
 
     #about-us .col:last-child {
