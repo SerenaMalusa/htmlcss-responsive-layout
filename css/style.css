@@ -295,7 +295,7 @@ main > section:nth-of-type(even) {
     color: var(--main-color-1);
 }
 
-#testimonials .col > div,
+#testimonials .col > .section__argument,
 #testimonials .col > h2,
 #testimonials .col > p {
     padding-bottom: calc(var(--base-space)*1.5);
@@ -304,13 +304,8 @@ main > section:nth-of-type(even) {
 /* cards */
 #testimonials .card {
     border-radius: 50px;
-    padding-top: calc(var(--base-space)*1.5);
     background-color: var(--main-color-1);
     color: var(--main-color-2);
-}
-
-#testimonials p {
-    padding: var(--base-space) 0;
 }
 
 #testimonials p > i {

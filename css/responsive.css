@@ -19,6 +19,18 @@
         margin-right: auto;
     }
 
+    /* SECTION TESTIMONIALS */
+    #testimonials .card .row {
+        align-items: center;
+    }
+    #testimonials .card .col.card__img {
+        width: 30%;
+    }
+
+    #testimonials .card .col.card__text {
+        width: 70%;
+    }
+
     /* SECTION BENEFITS */
     #benefits .col {
         width: 50%;
