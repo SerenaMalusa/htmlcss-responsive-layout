@@ -12,7 +12,7 @@
 
     --main-color-1: #9792e4;
     --main-color-2: #ffffff;
-    --main-color-text: color: #333333;
+    --main-color-text: #333333;
     
     --bottom-color-1: #333333;
     --bottom-color-text: #fdfdfe;
@@ -104,6 +104,8 @@ li {
     border: none;
     border-radius: 25px;
     padding: 5px 10px;
+    background-color: var(--main-color-1);
+    color: var(--main-color-2);
 }
 
 .btn-round {
@@ -116,8 +118,9 @@ li {
 }
 
 .btn-primary {
-    background-color: var(--main-color-1);
-    color: inherit;
+    padding: 5px 50px;
+    font-weight: 700;
+    letter-spacing: 0.1;
 }
 
 .btn-secondary {
@@ -280,6 +283,10 @@ main > section:nth-of-type(even) {
     font-style: italic;
 }
 
+#app-dev .btn.btn-round {
+    color: black;
+}
+
 /* SECTION TESTIMONIALS */
 #testimonials {
     text-align: center;
@@ -318,13 +325,32 @@ main > section:nth-of-type(even) {
 
 /* SECTION BEENFITS */
 #benefits .section__title {
+    padding-bottom: calc(var(--base-space)*2);
     color: var(--main-color-2);
     text-align: center;
 }
 
+/* cards */
 #benefits .card {
+    padding: calc(var(--base-space)*1.5);
     background-color: var(--main-color-2);
+    color: var(--main-color-1);
 }  
+
+#benefits .card__number {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#benefits .card > p {
+    color: var(--main-color-text);
+} 
+
+#benefits .card__number,
+#benefits .card > h3,
+#benefits .card > p {
+    padding-bottom: var(--base-space);
+}
 
 /* SECTION GET-STARTED */
 #get-started {
