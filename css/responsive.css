@@ -123,6 +123,10 @@
     #app-dev .col {
         width: 40%;
     }
+    
+    #app-dev .col > p {
+        padding-bottom: 0;
+    }
 
     #app-dev .card {
         margin-left: var(--base-space);
@@ -150,7 +154,7 @@
 
     /* SECTION ABOUT-US*/
     #about-us .col:first-child {
-        width: 70%;
+        width: 60%;
     }
 
     #about-us .col:last-child {

@@ -434,7 +434,8 @@ main > section:nth-of-type(even) {
     color: rgba(255, 255, 255, 0.521);
 }
 
-#get-started h3 {
+#get-started h3,
+#get-started p {
     width: 70%;
 } 
 
